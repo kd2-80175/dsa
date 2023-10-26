@@ -9,13 +9,13 @@ rank: rank of a given integer "x", in stream is "total no. of ele's less than or
 	Input: { 10, 20, 15, 3, 4, 4, 1 }
 	Ouput: Rank of 4 is: 4*/
 	public static void linearsearch(int arr[],int size,int key) {
-		int cnt=-1;
+		int cnt=0;
 		for(int i=0;i<arr.length;i++) {
 			System.out.println("inside loop");
-			cnt++;
-			if(arr[i]==key) {
+			
+			if(arr[i]<=key) {
 				
-				break;
+				cnt++;
 			}
 			
 		
